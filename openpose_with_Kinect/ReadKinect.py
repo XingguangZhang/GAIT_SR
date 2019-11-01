@@ -16,8 +16,8 @@ def KinectStream(frame_count, BreakKinect, enable_rgb=True, enable_depth=True):
     CreateRefrashFolder(path_color)
     CreateRefrashFolder(path_depth)
     '''
-	# if the depth images are needed, you must use OpenGLPacketPipeline to use GPU to
-	# render it to achiece a real-time capture.
+	# if the depth images are needed, you must use OpenGLPacketPipeline for enabling GPU to
+	# render the depth map for so that the real-time capture can be achieved.
 	try:
 		from pylibfreenect2 import OpenGLPacketPipeline
 		pipeline = OpenGLPacketPipeline()
